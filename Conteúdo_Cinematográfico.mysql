@@ -1,0 +1,16 @@
+create database Conteúdo_Cinematográfico;
+
+create table Filmes(
+Id int auto_increment,
+Genero enum('', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '') not null,
+Titulo varchar(50) not null,
+Idade int,
+Preço double not null,
+Desconto float,
+Quantidade_Vendido int not null default 0,
+Data_Compra date,
+Hora_Compra time,
+check(Idade >= 18),
+check (Preço > Desconto),
+primary key(Id, Idade)
+)default charset = utf8;
