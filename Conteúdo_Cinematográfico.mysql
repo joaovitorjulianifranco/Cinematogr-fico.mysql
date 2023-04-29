@@ -2,7 +2,7 @@ create database Conteúdo_Cinematográfico;
 
 create table Filmes(
 Id int auto_increment,
-Genero enum('', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '') not null,
+Genero enum('Ação', 'Aventura', 'Comédia', 'Dança', 'Documentário', 'Drama', 'Docuficção', 'Faroeste', 'Fantasia científica', 'Ficção científica', 'Filmes de guerra', 'Mistério', 'Musical', 'Filme policial', 'Romance', 'Terror', 'Thriller') not null,
 Titulo varchar(50) not null,
 Idade int,
 Preço double not null,
